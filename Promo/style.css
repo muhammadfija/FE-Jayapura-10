@@ -90,7 +90,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .home-text h1{
