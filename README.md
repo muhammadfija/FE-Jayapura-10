@@ -1,6 +1,6 @@
 # capstone_project
-Muhammad Fija Kanzul Ulum
-Nasrul Hidayat
-Ocha Meilyla
-Rahma Zahrani
-Reni Rachmadhani
+1. Muhammad Fija Kanzul Ulum
+2. Nasrul Hidayat
+3. Ocha Meilyla
+4. Rahma Zahrani
+5. Reni Rachmadhani
