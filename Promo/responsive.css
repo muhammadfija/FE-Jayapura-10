@@ -1,5 +1,5 @@
-/* Style untuk layar mobile (HP) */
-@media (max-width: 600px) {
+/* Style untuk layar Tablet */
+@media (max-width: 768px) {
   body{
     background-size: contain;
     background-position: center;
@@ -55,7 +55,7 @@
   }
   /* Section Home */
   .home {
-    flex-direction: column-reverse; /* Ubah urutan elemen di layar mobile */
+    flex-direction: column-reverse; 
     padding: 20px;
     text-align: center;
   }
@@ -94,7 +94,9 @@
     text-align: center;
     margin-top: 20px;
   }
-
+  .garis{
+    align-items: center;
+  }
   .kiri,
   .kanan {
     width: 100%;
@@ -140,8 +142,8 @@
   }
 
   .tombol {
-    background-color: #333;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     padding: 5px 10px;
     font-size: 16px;
@@ -152,6 +154,7 @@
   .footerr {
     text-align: center;
     margin-top: 20px;
+    height: auto;
   }
 
   .footer h6 {
