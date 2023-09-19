@@ -1,0 +1,132 @@
+@media screen and (max-width: 600px) {
+
+    body{
+        background-image: url(mobile2.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #menu-icon{
+        display: initial;
+        color: #193444;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+
+    header .navbar-about{
+        position: absolute;
+        display: flex;
+        top: -400px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f8f8f8;
+        transition: .3s;
+    }
+
+    .navbar-about.active{
+        top: 70px;
+    }
+
+    .navbar-about a{
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .navbar-about  a:after{
+        left: 40%;
+        bottom: 10px;
+    }
+
+    .navbar-about a.active:after{
+        width: 20%;
+    }
+    
+    .navbar-about a:hover:after{
+        width:20%;
+    }
+
+    .home{
+        margin-bottom: auto;
+        max-width: 600px;
+    }
+    .home-content h1 {
+        padding: 100px;
+        font-size: x-small;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        font-size: 16px; 
+        margin-left: 5%; 
+        margin-top: 100%;
+    }
+
+    h3 {
+        margin-left: 60% 
+    }
+
+    .container {
+        margin-right: 30px; 
+        margin-top: 20px; 
+    }
+
+    .container .Item {
+        padding: 5px; 
+        margin: 5px; 
+    }
+
+    .container2 .Item{
+        padding: 5px;
+        margin: 5px;
+        
+    }
+
+    .container p {
+        font-size: 12px; 
+        margin-top: 5px; 
+    }
+
+    .container img.medium {
+        width: 200px; 
+        height: auto;
+    }
+
+    .container2 img.medium {
+        width: 200px; 
+        height: auto;
+    }
+
+    h4 {
+        margin-left: 5%; 
+        margin-top: 10px; 
+        font-size: 24px; 
+    }
+
+    .container2 {
+        margin-right: 30px; 
+        margin-top: 30px; 
+    }
+
+    .container3 {
+        width: 100%;
+        margin-left: 5%; 
+    }
+
+    .centered-text {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .container3 img {
+        width: 200px; 
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
