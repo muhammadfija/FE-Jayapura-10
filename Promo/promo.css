@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -76,12 +74,12 @@ body{
     width: 100%;
 }
 section {
-    padding: 80px 13%;
+    padding: 70px 10% 0;
 }
 
 .home {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background: #BCE0F4;
     background-size: cover;
