@@ -1,0 +1,248 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Forum&family=Lancelot&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    color: #193444;
+    font-family: 'Poppins';
+}
+
+.programs{
+    background-color: #BCE0F4;
+    height: 100vh;
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header-program{
+    text-decoration: none;
+    background-color: #BCE0F4;
+    position: fixed;
+    padding: 10px 10%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 45px;
+}
+
+
+.navbar-program a{
+    color: #193444;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+
+.navbar-program  a:after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #193444;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar-program  a.active,
+.navbar-program  a:hover{
+    color: #193444;
+    font-weight: bolder;
+}
+
+.navbar-program a.active:after{
+    width: 100%;
+}
+
+.navbar-program a:hover:after{
+    width: 100%;
+}
+.program{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    justify-content: space-between;
+}
+.content-program1 h1 {
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.content-program1 p{
+    font-size: 15px;
+    font-weight: 530;
+    font-family: 'Poppins';
+    margin: 8px;
+    padding: auto;
+}
+
+.btn{
+    position: relative;
+    width: 100px;
+    height: 45px;
+    display: inline-flex;
+    border-radius: 40px;
+    background-color:white ;
+    color: #193444;
+    text-decoration: none;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    z-index: 1;
+    margin: 30px 5px ;
+}
+
+.btn:hover{
+    font-weight: bolder;
+    color: white;
+    background-color: #193444;
+}
+
+.program-content{
+    background-color: #f8f8f8;
+    height: 260vh;
+    flex-wrap: wrap;
+}
+
+.program-content h2{
+    color: #193444;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-shadow: #193444;
+    border-bottom-style: solid #193444 ;
+}
+.box{
+    width: 350px;
+    height: 620px;
+    margin: 40px 20px 30px 60px ;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0 7px;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 30px;
+    /* border-bottom-style: solid; */
+    box-shadow: 5px 5px 10px gray;
+    float: left;
+    position: relative;
+    line-height: 1.6;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.box img{
+    position: relative;
+    text-align: center;
+   margin: 0px 10px 5px 10px;
+}
+
+.box h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.box p{
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 20px;
+    word-spacing: 0;
+}
+
+.content-program2{
+    margin-top: 100px;
+    background-color: #BCE0F4;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+     display: flex;
+    align-items: center;
+    padding: 40px 5% 0;
+}
+
+.content-program2 img{
+    margin-top: 0px ;
+    margin-left: 30px;
+}
+
+.box-content{
+    float: left;
+}
+
+.box-content h4{
+    font-size: 30px;
+    font-family: 'Forum' ;
+}
+
+.box-content p{
+    text-align: right;
+    margin: 20px;
+    letter-spacing: 1.6;
+}
+
+.strip :before{
+    content: "\2014"; 
+}
+
+.blockquoted :before{
+    content: "\201c";
+}
+
+.footer{
+    background: rgb(23, 23, 58);
+    color: aliceblue;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+
+
+
