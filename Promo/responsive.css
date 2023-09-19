@@ -54,21 +54,21 @@
     width: 20%;
   }
   /* Section Home */
-  .home {
+  .promo {
     flex-direction: column-reverse; 
     padding: 20px;
     text-align: center;
   }
 
-  .home-text {
+  .promo-text {
     width: 100%;
   }
 
-  .home-text h1 {
+  .promo-text h1 {
     font-size: 24px;
   }
 
-  .home-img img {
+  .promo-img img {
     max-width: 100%;
     height: auto;
   }
