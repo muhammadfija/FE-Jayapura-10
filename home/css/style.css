@@ -81,22 +81,67 @@ img {
 }
 
 /*======================NAVBAR=========================*/
-nav {
-  background: transparent;
-  width: 100vw;
-  height: 5rem;
-  position: fixed;
-  top: 0;
-  z-index: 11;
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
 }
-.logo {
+
+.header-program{
+  text-decoration: none;
+  background-color: #BCE0F4;
+  position: fixed;
+  padding: 10px 10%;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
   float: left;
   width: 200px;
   height: 45px;
 }
-.nav_menu li.active a {
-  color: black;
+
+
+.navbar-program a{
+  color: #193444;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+
+.navbar-program  a:after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #193444;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar-program  a.active,
+.navbar-program  a:hover{
+  color: #193444;
   font-weight: bolder;
+}
+
+.navbar-program a.active:after{
+  width: 100%;
+}
+
+.navbar-program a:hover:after{
+  width: 100%;
 }
 
 /*===============styleeing css scroll with javascript================*/
@@ -153,7 +198,7 @@ bottom: 10px;
 transition: 0.5s;*/
 
 /*======================HEADER=========================*/
-header {
+header1 {
   position: relative;
   top: 5rem;
   overflow: hidden;
