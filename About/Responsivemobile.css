@@ -1,10 +1,10 @@
 @media screen and (max-width: 600px) {
 
-    body{
+    /* body{
         background-image: url(mobile2.png);
         background-position: center;
         background-size: cover;
-    }
+    } */
 
     #menu-icon{
         display: initial;
@@ -78,6 +78,7 @@
     .container .Item {
         padding: 5px; 
         margin: 5px; 
+        width: 90px;
     }
 
     .container2 .Item{
@@ -112,15 +113,20 @@
         margin-top: 30px; 
     }
 
+    .history{
+        text-align: center;
+        flex-direction: column;
+    }
+
     .container3 {
         width: 100%;
         margin-left: 5%; 
     }
 
-    .centered-text {
+    /* .centered-text {
         text-align: justify;
         font-size: 12px;
-    }
+    } */
 
     .container3 img {
         width: 200px; 

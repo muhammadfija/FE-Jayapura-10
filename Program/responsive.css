@@ -146,6 +146,7 @@
         justify-content: center;
         padding-top: 150px;
         flex-direction: column-reverse;
+        position: relative;
     }
 
     .program img{
@@ -231,6 +232,8 @@
         font-size: 15px;
     }
 }
+
+
 
 
    
