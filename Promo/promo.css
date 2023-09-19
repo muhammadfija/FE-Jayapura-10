@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -10,9 +8,9 @@
 }
 
 body{
-    line-height: 1.7;
     background-color: white;
     color: white;
+    font-family: 'poppins';
 }
 
 #menu-icon{
@@ -40,6 +38,7 @@ body{
     height: 45px;
 }
 
+
 .navbar-promo a{
     color: #193444;
     list-style: none;
@@ -62,8 +61,9 @@ body{
     bottom: -10px;
     transition: 0.5s;
 }
+
 .navbar-promo  a.active,
-.navbar-promo  a:hover{
+.navbar-promo a:hover{
     color: #193444;
     font-weight: bolder;
 }
@@ -75,13 +75,14 @@ body{
 .navbar-promo a:hover:after{
     width: 100%;
 }
+
 section {
-    padding: 80px 13%;
+    padding: 70px 10% 0;
 }
 
-.home {
+.promo {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background: #BCE0F4;
     background-size: cover;
@@ -93,7 +94,7 @@ section {
     justify-content: start;
 }
 
-.home-text h1{
+.promo-text h1{
     font-size: 30px;
     margin: 10px 0 10px;
     height: 200px;
@@ -231,7 +232,8 @@ section {
 footer {
     background: rgb(23, 23, 58);
     color: aliceblue;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 100px;
   }
