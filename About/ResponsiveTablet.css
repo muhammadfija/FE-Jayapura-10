@@ -1,0 +1,96 @@
+@media (max-width: 768px) {
+    .header-about {
+        padding: 10px 5%;
+    }
+
+    .navbar-about a::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #193444;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navbar-about a:hover::after{
+        width:100%;
+    }
+    
+    .navbar-about a.active,
+    .navbar-about a:hover{
+        color: #193444;
+        font-weight: bolder;
+    }
+    
+    .navbar-about  a.active:after{
+        width: 100%;
+    }
+    .navbar-about a {
+        margin: 0 10px; /* Mengurangi margin untuk item navigasi */
+    }
+
+    .home-content h1 {
+        font-size: 36px; /* Mengurangi ukuran font untuk h1 */
+        padding: 110px; /* Mengurangi padding untuk h1 */
+    }
+
+    .home-content p {
+        font-size: 16px; /* Mengurangi ukuran font untuk paragraf */
+        margin-left: 5%; /* Mengurangi margin kiri untuk paragraf */
+        margin-top: -10px; /* Mengurangi margin atas untuk paragraf */
+    }
+
+    h3 {
+        margin-top: 10%; /* Mengurangi margin atas untuk h3 */
+    }
+
+    .container {
+        margin-right: 30px; /* Mengurangi margin kanan untuk kontainer */
+        margin-top: 20px; /* Mengurangi margin atas untuk kontainer */
+    }
+
+    .container .Item {
+        padding: 5px; /* Mengurangi padding untuk item kontainer */
+        margin: 5px; /* Mengurangi margin untuk item kontainer */
+    }
+
+    .container p {
+        font-size: 12px; /* Mengurangi ukuran font untuk paragraf */
+        margin-top: 5px; /* Mengurangi margin atas untuk paragraf */
+    }
+
+    .container img.medium {
+        width: 200px; /* Mengurangi ukuran gambar */
+        height: auto;
+    }
+
+    h4 {
+        margin-left: 5%; /* Mengurangi margin kiri untuk h4 */
+        margin-top: 10px; /* Mengurangi margin atas untuk h4 */
+        font-size: 24px; /* Mengurangi ukuran font untuk h4 */
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    .container3 {
+        margin-left: 5%; /* Mengurangi margin kiri untuk kontainer3 */
+        margin-right: 10px; /* Mengurangi margin kanan untuk kontainer3 */
+    }
+
+    .container3 p {
+        font-size: 12px; /* Mengurangi ukuran font untuk paragraf pada kontainer3 */
+    }
+
+    .container3 img {
+        width: 250px; /* Mengurangi ukuran gambar pada kontainer3 */
+        height: 200px;
+    }
+    
+}
