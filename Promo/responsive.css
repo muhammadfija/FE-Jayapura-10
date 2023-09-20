@@ -151,14 +151,8 @@
   }
 
   /* Footer */
-  .footerr {
-    text-align: center;
-    margin-top: 20px;
-    height: auto;
-  }
-
-  .footer h6 {
-    font-size: 12px;
-    color: white;
-  }
+  .footer{
+    padding: 1rem;
+    font-size: 15px;
+}
 }

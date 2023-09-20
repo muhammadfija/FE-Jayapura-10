@@ -225,16 +225,11 @@ section {
 
 /* bagian footer */
 
-.footerr{
-    background: #ffffff;
-    padding-top: 100%;
-}
-
-footer {
+.footer{
     background: rgb(23, 23, 58);
     color: aliceblue;
     padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 100px;
-  }
+}
