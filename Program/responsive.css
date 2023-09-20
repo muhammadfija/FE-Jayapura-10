@@ -107,7 +107,7 @@
         width: 130px;
         height: auto;
     }
-  header .navbar-program{
+    header .navbar-program{
         position: absolute;
         display: flex;
         top: -400px;
@@ -146,7 +146,7 @@
         justify-content: center;
         padding-top: 150px;
         flex-direction: column-reverse;
-        position: relative;
+        /* position: relative; */
     }
 
     .program img{
@@ -230,6 +230,18 @@
     .footer{
         padding: 1rem;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .program{
+       padding-top: 0px;
+       
+
+    }
+
+    .program img{
+        padding-top: 5px;
     }
 }
 

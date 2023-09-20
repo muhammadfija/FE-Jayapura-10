@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -89,7 +90,7 @@ section {
     background-position: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 5rem;
     align-items: center;
     justify-content: start;
     align-content: center;
@@ -100,7 +101,7 @@ section {
     margin: 5px 0 5px;
     height: 45px;
     width: 100%;
-    color: black;
+    color: #193444;
     font-family:'Poppins', sans-serif;
 }
 
