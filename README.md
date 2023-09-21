@@ -1,4 +1,4 @@
-# capstone_project-EduSpace
+# Capstone_Project-EduSpace
 1. Muhammad Fija Kanzul Ulum
 2. Nasrul Hidayat
 3. Ocha Meilyla
