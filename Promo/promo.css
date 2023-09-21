@@ -81,19 +81,14 @@ section {
     padding: 70px 10% 0;
 }
 
-.promo {
-    position: relative;
-    height: 100vh;
+.promo{
     width: 100%;
-    background: #BCE0F4;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    height: 100vh;
+    display: flex;
     align-items: center;
-    justify-content: start;
-    align-content: center;
+    padding: 70px 10% 0;
+    background-color: #BCE0F4;
+    justify-content: space-around;
 }
 
 .promo-text h1{
@@ -197,7 +192,6 @@ section {
     background-color: #4CAF50; 
     color: white;
     padding: 10px 20px; 
-    margin: 10px;
     font-size: 16px; 
     border: none;
     cursor: pointer;
@@ -226,11 +220,16 @@ section {
 
 /* bagian footer */
 
+.footerr{
+    background: #ffffff;
+    padding-top: 100%;
+}
+
 .footer{
     background: rgb(23, 23, 58);
     color: aliceblue;
     padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
