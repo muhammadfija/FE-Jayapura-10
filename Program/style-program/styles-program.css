@@ -153,10 +153,11 @@ body{
     text-shadow: #193444;
     border-bottom-style: solid #193444 ;
 }
+
 .box{
     width: 350px;
     height: 620px;
-    margin: 40px 20px 30px 60px ;
+    margin: 30px 20px 30px 68px ;
     background-color: white;
     text-align: center;
     padding: 50px 0 7px;
