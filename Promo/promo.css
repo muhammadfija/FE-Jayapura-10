@@ -101,22 +101,15 @@ section {
 }
 
 .container {
-    padding: 70px 13%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, auto));
-    gap: 1rem;
-    align-items: center;
     cursor: pointer;
     color: black;
     font-size: 30px;
-    justify-items: start;
-    align-items: center;
 }
 .container-img{
     display: flex;
     align-items: center;
     padding: 10px;
-    justify-content: center;
+    justify-content: start;
 }
 
 .container-img img{
@@ -222,7 +215,6 @@ section {
 
 .footerr{
     background: #ffffff;
-    padding-top: 100%;
 }
 
 .footer{
@@ -232,4 +224,20 @@ section {
     font-size: 1.2rem;
     text-align: center;
     margin-top: 150px;
+}
+
+/* test */
+
+.flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-item {
+    background-color: white;
+    box-shadow: 0px 5px 20px 0px rgba(25, 52, 68, 0.25);
+    border-radius: 15px;
+    padding: 20px;
 }
