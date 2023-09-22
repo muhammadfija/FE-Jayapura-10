@@ -8,7 +8,7 @@
         width: 130px;
         height: auto;
     }
-    header .navbar-program{
+    header .navbar-about{
         position: absolute;
         display: flex;
         top: -400px;
@@ -20,25 +20,25 @@
         transition: .3s;
     }
 
-    .navbar-program.active{
+    .navbar-about.active{
         top: 70px;
     }
 
-    .navbar-program a{
+    .navbar-about a{
         padding: 1.5rem;
         display: block;
     }
 
-    .navbar-program  a:after{
+    .navbar-about  a:after{
         left: 40%;
         bottom: 10px;
     }
 
-    .navbar-program a.active:after{
+    .navbar-about a.active:after{
         width: 20%;
     }
     
-    .navbar-program a:hover:after{
+    .navbar-about a:hover:after{
         width: 20%;
     }
 

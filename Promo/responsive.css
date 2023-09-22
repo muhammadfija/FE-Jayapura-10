@@ -65,12 +65,12 @@
   }
 
   .promo-text h1 {
-    font-size: 15px;
+    font-size: 21px;
   }
 
   .promo-img img {
-    max-width: 100%;
-    height: auto;
+    max-width: 320px;
+    height: 320px;
   }
 
   /* Container */
@@ -224,7 +224,7 @@
   }
 
   .promo-img img {
-    max-width: 100%;
+    max-width: 320px;
     height: auto;
   }
 }
