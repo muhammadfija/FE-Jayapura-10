@@ -87,6 +87,18 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    .box article{
+        gap: 10px;
+        width: 450px ;
+        height: 520px ;
+    }
+
+    .program-content{
+        height: 3050px;
+    }
+}
+
 
 @media screen and (max-width: 640px) {
 
