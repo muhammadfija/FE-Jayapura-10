@@ -119,9 +119,11 @@ section {
 
 .container-img img{
     margin-right: 20px;
+    width: 45px;
+    height: 45px;
 }
 .container-text{
-    font-size: 30px;
+    font-size: 26px;
 }
 .garis{
     border-style: solid;
@@ -134,8 +136,8 @@ section {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
-    padding: 20px;
+    font-size: 24px;
+    padding: 70px;
     font: 'Poppins', sans-serif;
 }
 

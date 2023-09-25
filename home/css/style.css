@@ -275,6 +275,12 @@ img {
 .dots label:hover {
   background: #ff8800;
 }
+.icon-promo a img{
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
 #img1:checked ~ .m1 {
   margin-left: 0;
 }
