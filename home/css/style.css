@@ -59,7 +59,6 @@ a {
 img {
   width: 100%;
   display: block;
-  object-fit: cover;
 }
 
 .btn {
@@ -275,11 +274,15 @@ img {
 .dots label:hover {
   background: #ff8800;
 }
-.icon-promo a img{
-  display: flex;
+.icon{
   align-items: center;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.icon-promo {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
 }
 #img1:checked ~ .m1 {
   margin-left: 0;

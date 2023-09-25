@@ -162,7 +162,6 @@ article {
 }
 
 img{
-    object-fit: cover;
     overflow: clip;
 }
 
