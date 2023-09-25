@@ -154,24 +154,32 @@ body{
     border-bottom-style: solid #193444 ;
 }
 
+/* width: 350px;
+height: 620px; */
 .box{
-    width: 350px;
-    height: 620px;
-    margin: 30px 20px 30px 68px ;
-    background-color: white;
-    text-align: center;
-    padding: 50px 0 7px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    z-index: 1;
-    border-radius: 30px;
-    /* border-bottom-style: solid; */
-    box-shadow: 5px 5px 10px gray;
-    float: left;
-    position: relative;
-    line-height: 1.6;
+    align-items: center;
+    gap: 50px;
+    margin: 10px;
 }
 
-.box:hover{
+.box article{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    width: 350px;
+    height: 620px;
+    cursor: pointer;
+}
+
+.box article img{
+    padding-top: 40px;
+}
+
+.box article:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;

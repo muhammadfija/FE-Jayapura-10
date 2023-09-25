@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     #menu-icon{
         display: initial;
         color: #193444;
@@ -47,24 +47,12 @@
     }
 
     .program{
-       padding-top: 20%;
+        height: 60vh;
+       /* padding-top: 20%; */
     }
     .program img{
-        width: 200px;
+        width: 270px;
         height: auto;
-    }
-
-    .box{
-        margin: 15px;
-        height: 530px;
-    }
-
-    .box h3{
-        font-size: 17px;
-    }
-
-    .box p{
-        font-size: 14px;
     }
 
     .program-content h2{
@@ -72,8 +60,12 @@
         margin-bottom: 10px;
     }
 
+    .box article{
+        gap: 40px;
+    }
+
     .program-content{
-        height: 1900px;
+        height: 2200px;
     }
 
     .content-program2{
@@ -146,12 +138,13 @@
         justify-content: center;
         padding-top: 150px;
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 60vh;
         /* position: relative; */
     }
 
     .program img{
         margin-bottom: 40px;
+        width: 200px;
     }
     
     .programs{
@@ -174,18 +167,18 @@
         height: 35px;
     }
 
-    .box{
-        width: 80%;
-        margin-top: 5px;
+    .box article{
         height: fit-content;
-        margin-bottom: 10%;
+        width: 80%;
+        /* margin-top: 5px; */
+        /* margin-bottom: 10%; */
         text-align: center;
         align-content: center;
-        margin-left: 10%;
+       
     }
 
     .box img{
-        height: 130px;
+        height: 150px;
         margin-bottom: 10px;
 
     }
@@ -198,7 +191,7 @@
 
     .program-content{
         text-align: center;
-        height: 2800px;
+        height: 2700px;
         width:100%;
     }
 
@@ -231,18 +224,6 @@
     .footer{
         padding: 1rem;
         font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .program{
-       padding-top: 0px;
-       
-
-    }
-
-    .program img{
-        padding-top: 5px;
     }
 }
 
