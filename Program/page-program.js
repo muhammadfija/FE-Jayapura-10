@@ -10,10 +10,19 @@ document.addEventListener("DOMContentLoaded", function(){
 }
 });
 
-document.querySelector("#show-form").addEventListener("click",function(){
-    document.querySelector(".popup").classList.add("active");
-});
+// document.querySelectorAll(".box-section").addEventListener("click",function(){
+//     document.querySelector(".popup").classList.add("show");
+// });
 
-document.querySelector(".popup .close-btn").addEventListener("click",function(){
-    document.querySelector(".popup").classList.remove("active");
+// document.querySelector(".popup .close-btn").addEventListener("click",function(){
+//     document.querySelector(".popup").classList.remove("show");
+// });
+
+let popup = document.querySelector(".popup");
+let close = document.querySelector(".close-btn");
+let muncul = document.querySelector(".box");
+
+muncul.addEventListener("click", function(){
+    popup.style.display = "flex";
+    popup.classList.add("show");
 });
