@@ -1,5 +1,4 @@
-/* Style untuk layar Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   body{
     background-size: contain;
     background-position: center;
@@ -55,9 +54,8 @@
   }
   /* Section Home */
   .promo {
-    flex-direction: column-reverse; 
     padding: 70px 10% 0;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
   }
 
@@ -66,12 +64,12 @@
   }
 
   .promo-text h1 {
-    font-size: 15px;
+    font-size: 21px;
   }
 
   .promo-img img {
-    max-width: 100%;
-    height: auto;
+    max-width: 320px;
+    height: 320px;
   }
 
   /* Container */
@@ -97,18 +95,6 @@
   }
   .garis{
     align-items: center;
-  }
-  .kiri,
-  .kanan {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .kotak1 {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
   }
 
   .poster1 {
@@ -162,5 +148,105 @@
     font-size: 12px;
     color: white;
     padding: 20px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #menu-icon {
+    display: initial;
+    color: #193444;
+  }
+
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+
+  .header-promo{
+    position: fixed;
+  }
+
+  header .navbar-promo {
+    position: absolute;
+    display: flex;
+    top: -400px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f8f8;
+    transition: .3s;
+  }
+
+  .navbar-promo.active {
+    top: 70px;
+  }
+
+  .navbar-promo a {
+    padding: 1.5rem;
+    display: block;
+  }
+
+  .navbar-promo a:after {
+    left: 40%;
+    bottom: 10px;
+  }
+
+  .navbar-promo a.active:after {
+    width: 20%;
+  }
+
+  .navbar-promo a:hover:after {
+    width: 20%;
+  }
+  /* Section Home */
+  .promo {
+    flex-direction: column-reverse;
+    padding: 72px 13% 71px;
+    height: 70vh;
+    text-align: center;
+  }
+
+  .promo-text {
+    width: 100%;
+  }
+
+  .promo-text h1 {
+    font-size: 15px;
+  }
+
+  .promo-img img {
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .promo {
+    flex-direction: column-reverse;
+    padding: 72px 13% 71px;
+    height: 70vh;
+    text-align: center;
+  }
+
+  .promo-text {
+    width: 100%;
+  }
+
+  .promo-text h1 {
+    font-size: 15px;
+  }
+
+  .promo-img img {
+    max-width: 100%;
+    height: auto;
   }
 }
