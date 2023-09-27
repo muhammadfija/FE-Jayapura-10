@@ -1,5 +1,4 @@
-/* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   body{
     background-size: contain;
     background-position: center;
@@ -65,12 +64,12 @@
   }
 
   .promo-text h1 {
-    font-size: 15px;
+    font-size: 21px;
   }
 
   .promo-img img {
-    max-width: 100%;
-    height: auto;
+    max-width: 320px;
+    height: 320px;
   }
 
   /* Container */
@@ -152,7 +151,7 @@
   }
 }
 
-/* Hp */
+
 @media screen and (max-width: 600px) {
   body{
     background-size: contain;
@@ -211,7 +210,7 @@
   .promo {
     flex-direction: column-reverse;
     padding: 72px 13% 71px;
-    height: 85vh;
+    height: 70vh;
     text-align: center;
   }
 
@@ -224,7 +223,7 @@
   }
 
   .promo-img img {
-    max-width: 100%;
+    max-width: 320px;
     height: auto;
   }
 }
@@ -234,7 +233,7 @@
   .promo {
     flex-direction: column-reverse;
     padding: 72px 13% 71px;
-    height: 85vh;
+    height: 70vh;
     text-align: center;
   }
 
