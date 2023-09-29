@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function(){
 }
 });
 
-var popup = document.getElementById("popup-show");
-var tutup = document.getElementsByClassName("close-btn");
-var btn = document.getElementById("myButton");
+const popup = document.getElementById("popup-show");
+const tutup = document.getElementsByClassName("close-btn");
+const btn = document.getElementsByClassName("btnContent");
 
 btn.onclick = function(){
     popup.style.display = "block !important";
@@ -21,3 +21,4 @@ btn.onclick = function(){
 tutup.onclick = function(){
     popup.style.display = "none";
 };
+
