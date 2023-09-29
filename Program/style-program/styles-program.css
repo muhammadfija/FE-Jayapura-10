@@ -251,7 +251,7 @@ body{
     
 }
 
-.btn-content{
+.btnContent{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
@@ -277,7 +277,7 @@ body{
 .popup{
     display: none;
     position: fixed;
-    z-index: 99;
+    z-index: 101;
     left: 0;
     top: 0;
     width: 100%;
@@ -302,15 +302,15 @@ body{
                 transform 200ms ease-in-out 0ms ;
 }
 
-/* .popup.show{
+.popup.show{
     top: 50%;
     transform: translate(-50%,-50%);
     transition: top 0ms ease-in-out 0ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms ;
     visibility: visible;
-} */
-.popup .close-btn{
+}
+.popup #close-btn{
     position: absolute;
     top: 10px;
     right: 10px;
