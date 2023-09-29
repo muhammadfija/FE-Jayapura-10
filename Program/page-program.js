@@ -10,15 +10,14 @@ document.addEventListener("DOMContentLoaded", function(){
 }
 });
 
-const popup = document.getElementById("popup-show");
-const tutup = document.getElementsByClassName("close-btn");
-const btn = document.getElementsByClassName("btnContent");
+var popup = document.getElementById("popup-show");
+var tutup = document.getElementsByClassName("close-btn");
+var btn = document.getElementById("myButton");
 
-btn.onclick = function(){
-    popup.style.display = "block !important";
-};
+// btn.onclick = function(){
+//     popup.style.display = "block !important";
+// };
 
 tutup.onclick = function(){
     popup.style.display = "none";
 };
-
