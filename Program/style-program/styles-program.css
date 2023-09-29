@@ -178,12 +178,6 @@ body{
     padding-top: 40px;
 }
 
-/* .box article:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.3s;
-} */
-
 .box img{
     position: relative;
     text-align: center;
@@ -251,7 +245,7 @@ body{
     
 }
 
-.btnContent{
+.btn-content{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
@@ -265,6 +259,7 @@ body{
     text-decoration: none;
     cursor: pointer;
     letter-spacing: 1px;
+    border-style: solid #193444 ;
 }
 
 .btn-content:hover{
@@ -285,14 +280,15 @@ body{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    transform: scaleX();
 }
 
 .form{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 500px;
+    transform: translate(-50%,-50%) scale(1);
+    width: 600px;
     padding: 20px 30px;
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0,15);
@@ -302,17 +298,8 @@ body{
                 transform 200ms ease-in-out 0ms ;
 }
 
-.popup.show{
-    top: 50%;
-    transform: translate(-50%,-50%);
-    transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 200ms ease-in-out 0ms ;
-    visibility: visible;
-} */
 
-.popup .close-btn{
-}
+
 .popup #close-btn{
     position: absolute;
     top: 10px;

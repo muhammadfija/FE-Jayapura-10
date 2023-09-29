@@ -11,13 +11,18 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 var popup = document.getElementById("popup-show");
-var tutup = document.getElementsByClassName("close-btn");
-var btn = document.getElementById("myButton");
+var tutup = document.getElementById("close-btn");
+var btns = document.querySelectorAll(".btn-content"); 
 
-// btn.onclick = function(){
-//     popup.style.display = "block !important";
-// };
+btns.forEach(btn => {
+    btn.onclick = function(){
+        popup.style.display = "block";
+    };
+});
 
 tutup.onclick = function(){
     popup.style.display = "none";
 };
+
+
+
