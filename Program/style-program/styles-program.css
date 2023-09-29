@@ -310,6 +310,7 @@ body{
                 transform 200ms ease-in-out 0ms ;
     visibility: visible;
 } */
+
 .popup .close-btn{
     position: absolute;
     top: 10px;
