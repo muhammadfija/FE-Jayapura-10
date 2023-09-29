@@ -10,19 +10,14 @@ document.addEventListener("DOMContentLoaded", function(){
 }
 });
 
-// document.querySelectorAll(".box-section").addEventListener("click",function(){
-//     document.querySelector(".popup").classList.add("show");
-// });
+var popup = document.getElementById("popup-show");
+var tutup = document.getElementsByClassName("close-btn");
+var btn = document.getElementById("myButton");
 
-// document.querySelector(".popup .close-btn").addEventListener("click",function(){
-//     document.querySelector(".popup").classList.remove("show");
-// });
+btn.onclick = function(){
+    popup.style.display = "block !important";
+};
 
-let popup = document.querySelector(".popup");
-let close = document.querySelector(".close-btn");
-let muncul = document.querySelector(".box");
-
-muncul.addEventListener("click", function(){
-    popup.style.display = "flex";
-    popup.classList.add("show");
-});
+tutup.onclick = function(){
+    popup.style.display = "none";
+};
