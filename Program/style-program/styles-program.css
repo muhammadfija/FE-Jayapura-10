@@ -154,8 +154,7 @@ body{
     border-bottom-style: solid #193444 ;
 }
 
-/* width: 350px;
-height: 620px; */
+
 .box{
     display: flex;
     flex-wrap: wrap;
@@ -179,11 +178,11 @@ height: 620px; */
     padding-top: 40px;
 }
 
-.box article:hover{
+/* .box article:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
-}
+} */
 
 .box img{
     position: relative;
@@ -252,15 +251,48 @@ height: 620px; */
     
 }
 
+.btn-content{
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #BCE0F4 ;
+    color: #193444 ;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    margin: 55px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
 
+.btn-content:hover{
+    font-weight: bolder;
+    color: white;
+    background-color: #193444 ;
+
+}
 
 .popup{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.form{
     position: absolute;
     top: 50%;
     left: 50%;
-    /* opacity: 0; */
     transform: translate(-50%,-50%);
-    width: 380px;
+    width: 500px;
     padding: 20px 30px;
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0,15);
@@ -268,21 +300,16 @@ height: 620px; */
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms ;
-    visibility: hidden;
 }
 
-body.popup.show{
-    filter: blur(5px);
-}
-
-.popup.show{
+/* .popup.show{
     top: 50%;
     transform: translate(-50%,-50%);
     transition: top 0ms ease-in-out 0ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms ;
     visibility: visible;
-}
+} */
 .popup .close-btn{
     position: absolute;
     top: 10px;
@@ -333,6 +360,7 @@ body.popup.show{
     outline: none;
     border: 1px solid #aaa;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .popup .form .form-element button{
@@ -341,10 +369,11 @@ body.popup.show{
     border: none;
     outline: none;
     font-size: 16px;
-    background: rgb(48, 150, 68);
+    background: #193444;
     color: #f5f5f5;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 
