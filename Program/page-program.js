@@ -1,22 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let menu = document.querySelector ("#menu-icon");
-    let navbar = document.querySelector (".navbar-program");
+    let menu = document.querySelector("#menu-icon");
+    let navbar = document.querySelector(".navbar-program");
 
     if (menu && navbar){
-    menu.onclick = () => {
-        menu.classList.toggle("bx-x");
-        navbar.classList.toggle("active");
-    };
-}
+        menu.onclick = () => {
+            menu.classList.toggle("bx-x");
+            navbar.classList.toggle("active");
+        };
+    }
 });
 
 var popup = document.getElementById("popup-show");
-var tutup = document.getElementsByClassName("close-btn");
-var btn = document.getElementById("myButton");
+var tutup = document.getElementById("close-btn");
+var btns = document.querySelectorAll(".btn-content"); // Menggunakan class sebagai pengganti id
 
-btn.onclick = function(){
-    popup.style.display = "block !important";
-};
+btns.forEach(btn => {
+    btn.onclick = function(){
+        popup.style.display = "block";
+    };
+});
 
 tutup.onclick = function(){
     popup.style.display = "none";
