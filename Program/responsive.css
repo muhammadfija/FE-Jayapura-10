@@ -87,6 +87,18 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    .box article{
+        gap: 10px;
+        width: 450px ;
+        height: 520px ;
+    }
+
+    .program-content{
+        height: 3050px;
+    }
+}
+
 
 @media screen and (max-width: 640px) {
 
@@ -191,8 +203,9 @@
 
     .program-content{
         text-align: center;
-        height: 2700px;
+        height: 3000px;
         width:100%;
+        position: relative;
     }
 
     .program-content h2{
