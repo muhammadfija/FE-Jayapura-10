@@ -1,6 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Poppins&display=swap');
+
   @import url('https://fonts.googleapis.com/css2?family=Forum&family=Lancelot&family=Poppins&display=swap');
 
 *{
@@ -174,6 +173,11 @@ body{
     cursor: pointer;
 }
 
+.box-section:hover{
+    background:rgb(253, 249, 242);
+    border-color: #193444;
+}
+
 .box article img{
     padding-top: 40px;
 }
@@ -195,6 +199,31 @@ body{
     padding-right: 20px;
     word-spacing: 0;
 }
+
+.btn-content{
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #457b9d ;
+    color: white ;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    margin: 55px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-style: solid #193444 ;
+}
+
+.btn-content:hover{
+    font-weight: bolder;
+    color: #193444;
+    background-color: transparent ;
+
+}
+
 
 .content-program2{
     margin-top: 100px;
@@ -245,29 +274,6 @@ body{
     
 }
 
-.btn-content{
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    background-color: #BCE0F4 ;
-    color: #193444 ;
-    width: 150px;
-    height: 40px;
-    position: relative;
-    margin: 55px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    letter-spacing: 1px;
-    border-style: solid #193444 ;
-}
-
-.btn-content:hover{
-    font-weight: bolder;
-    color: white;
-    background-color: #193444 ;
-
-}
 
 .popup{
     display: none;
@@ -297,8 +303,6 @@ body{
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms ;
 }
-
-
 
 .popup #close-btn{
     position: absolute;
