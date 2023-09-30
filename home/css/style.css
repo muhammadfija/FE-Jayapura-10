@@ -207,6 +207,13 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
+
+.btn-private{
+  margin-top: 20px;
+}
+.btn-live{
+  margin-top: 40px;
+}
 .program {
   background: white;
   text-align: center;
