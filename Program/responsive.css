@@ -91,7 +91,7 @@
     .box article{
         gap: 10px;
         width: 450px ;
-        height: 520px ;
+        height: 560px ;
     }
 
     .program-content{
@@ -181,7 +181,7 @@
 
     .box article{
         height: fit-content;
-        width: 80%;
+        width: 85%;
         /* margin-top: 5px; */
         /* margin-bottom: 10%; */
         text-align: center;

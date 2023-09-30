@@ -160,7 +160,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     margin: 10px;
 }
 
@@ -170,7 +170,7 @@ body{
     text-align: center;
     background: #fff;
     width: 350px;
-    height: 620px;
+    height: 650px;
     cursor: pointer;
 }
 
@@ -254,7 +254,7 @@ body{
     width: 150px;
     height: 40px;
     position: relative;
-    margin: 55px;
+    margin: 30px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
