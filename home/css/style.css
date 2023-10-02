@@ -176,7 +176,7 @@ img {
 }
 
 .btn {
-  background-color: blue;
+  background-color: #193444;
   color: antiquewhite;
   border-radius: 30px;
   z-index: 5;
@@ -196,7 +196,7 @@ img {
 .link_program {
   font-weight: bolder;
   text-decoration: underline;
-  color: rgb(43, 43, 247);
+  color: #193444;
   text-align: center;
 }
 .link_program::after {
@@ -224,7 +224,7 @@ img {
 }
 .program:hover {
   background: transparent;
-  border-color: blue;
+  border-color: #193444;
 }
 .program_info {
   padding: 2rem;
@@ -405,6 +405,40 @@ footer {
   }
 
   /* ============================== NAVBAR ============================== */
+ 
+  /* ============================== HEADER ============================== */
+  .header1 {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
+  .header_container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+
+  /* ============================== PROGRAM ============================== */
+  .programs {
+    margin-top: 0;
+  }
+  .programs_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ============================== FAQS ============================== */
+  .faqs_container {
+    grid-template-columns: 1fr;
+  }
+  .faq {
+    padding: 1.5rem;
+  }
+}
+
+/*====================MEDIA QUERYES HANPHONE=========================*/
+@media screen and (max-width: 900px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  /* ============================== NAV ============================== */
   #menu-icon{
     display: initial;
     color: #193444;
@@ -447,42 +481,6 @@ footer {
   .navbar-program a:hover:after{
     width: 20%;
 }
-  /* ============================== HEADER ============================== */
-  .header1 {
-    height: 52vh;
-    margin-bottom: 4rem;
-  }
-  .header_container {
-    gap: 0;
-    padding-bottom: 3rem;
-  }
-
-  /* ============================== PROGRAM ============================== */
-  .programs {
-    margin-top: 0;
-  }
-  .programs_container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* ============================== FAQS ============================== */
-  .faqs_container {
-    grid-template-columns: 1fr;
-  }
-  .faq {
-    padding: 1.5rem;
-  }
-}
-
-/*====================MEDIA QUERYES HANPHONE=========================*/
-@media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-sm);
-  }
-  /* ============================== NAV ============================== */
-  .nav_menu {
-    right: 0%;
-  }
 
   /* ============================== HEADER ============================== */
   .header1 {

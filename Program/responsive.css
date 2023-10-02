@@ -65,7 +65,7 @@
     }
 
     .program-content{
-        height: 2200px;
+        height: 2400px;
     }
 
     .content-program2{
@@ -91,11 +91,11 @@
     .box article{
         gap: 10px;
         width: 450px ;
-        height: 560px ;
+        height: 600px ;
     }
 
     .program-content{
-        height: 3050px;
+        height: 3400px;
     }
 }
 
@@ -151,7 +151,6 @@
         padding-top: 150px;
         flex-direction: column-reverse;
         height: 60vh;
-        /* position: relative; */
     }
 
     .program img{
@@ -182,8 +181,6 @@
     .box article{
         height: fit-content;
         width: 85%;
-        /* margin-top: 5px; */
-        /* margin-bottom: 10%; */
         text-align: center;
         align-content: center;
        
@@ -197,13 +194,17 @@
 
     .box p{
         padding-bottom: 40px;
-        font-size: 12px;
+        font-size: 13px;
         
+    }
+
+    .btn-content{
+        margin-top: 5px;
     }
 
     .program-content{
         text-align: center;
-        height: 3000px;
+        height: 3200px;
         width:100%;
         position: relative;
     }
@@ -232,6 +233,10 @@
 
     .content-program2 p{
         font-size: 10px;
+    }
+
+    .form{
+        width: 300px;
     }
 
     .footer{

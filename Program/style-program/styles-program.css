@@ -169,13 +169,12 @@ body{
     text-align: center;
     background: #fff;
     width: 350px;
-    height: 650px;
+    height: 690px;
     cursor: pointer;
 }
 
 .box-section:hover{
     background:rgb(253, 249, 242);
-    border-color: #193444;
 }
 
 .box article img{
@@ -196,7 +195,7 @@ body{
 .box p{
     text-align: justify;
     padding-left: 25px;
-    padding-right: 20px;
+    padding-right: 25px;
     word-spacing: 0;
 }
 
@@ -204,25 +203,34 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-    background-color: #457b9d ;
+    background-color: #193444 ;
     color: white ;
     width: 150px;
     height: 40px;
     position: relative;
-    margin: 55px;
+    margin: 35px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
     letter-spacing: 1px;
-    border-style: solid #193444 ;
+    border: none ;
 }
 
 .btn-content:hover{
     font-weight: bolder;
     color: #193444;
     background-color: transparent ;
+    border: solid 1px;
 
 }
+
+.btn1{
+    margin-top: 70px;
+}
+.btn-private{
+    margin-top: 60px;
+}
+
 
 
 .content-program2{
@@ -272,30 +280,6 @@ body{
     text-align: center;
     margin-top: 100px;
     
-}
-
-.btn-content{
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    background-color: #BCE0F4 ;
-    color: #193444 ;
-    width: 150px;
-    height: 40px;
-    position: relative;
-    margin: 35px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    letter-spacing: 1px;
-    border-style: solid #193444 ;
-}
-
-.btn-content:hover{
-    font-weight: bolder;
-    color: white;
-    background-color: #193444 ;
-
 }
 
 .popup{
