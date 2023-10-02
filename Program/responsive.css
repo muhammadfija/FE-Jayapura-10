@@ -151,7 +151,6 @@
         padding-top: 150px;
         flex-direction: column-reverse;
         height: 60vh;
-        /* position: relative; */
     }
 
     .program img{
@@ -195,8 +194,12 @@
 
     .box p{
         padding-bottom: 40px;
-        font-size: 12px;
+        font-size: 13px;
         
+    }
+
+    .btn-content{
+        margin-top: 5px;
     }
 
     .program-content{
@@ -230,6 +233,10 @@
 
     .content-program2 p{
         font-size: 10px;
+    }
+
+    .form{
+        width: 300px;
     }
 
     .footer{
