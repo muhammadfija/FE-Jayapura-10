@@ -188,17 +188,17 @@ section {
 }
 
 .tombol{
-    background-color: #4CAF50; 
-    color: white;
+    background-color: #BCE0F4; 
+    color: #193444;
     padding: 10px 20px; 
     font-size: 16px; 
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .tombol:hover {
-  background-color: #274db5;
+  background-color: #4ee98c;
 }
 
 .tengah{

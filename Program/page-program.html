@@ -111,10 +111,16 @@
             </div>
             <div class="form-element">
                 <label for="kode">Kode Promo:</label>
-                <input type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Jika Ada)">
+                <input required type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Jika Ada)">
             </div>
             <div class="form-element">
-                <button>Submit</button>
+                <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
+                <div class="popup1" id="popup1">
+                    <img src="./style-program/ceklis.png">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted. thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
             </div>
         </div>
     </div>
