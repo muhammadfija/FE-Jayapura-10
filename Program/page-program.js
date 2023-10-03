@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function(){
 var popup = document.getElementById("popup-show");
 var tutup = document.getElementById("close-btn");
 var btns = document.querySelectorAll(".btn-content"); 
+var popup1 = document.getElementById("popup1");
+var submitBtn = document.getElementById("btn1");
+var ok = document.getElementById("ok")
 
 btns.forEach(btn => {
     btn.onclick = function(){
@@ -24,11 +27,19 @@ tutup.onclick = function(){
     popup.style.display = "none";
 };
 
+submitBtn.onclick = function(){
+    popup1.style.display = "block";
+};
+
+ok.onclick = function(){
+    popup1.style.display = "none";
+};
 // Kirim data
 document.addEventListener("DOMContentLoaded", function () {
-    var submitButton = document.querySelector(".btn1");
+    var submitButton = document.querySelector("#btn1");
 
     submitButton.addEventListener("click", function (e) {
+       
         e.preventDefault();
 
         var nama = document.getElementById("nama").value;
@@ -36,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var umur = document.getElementById("umur").value;
         var jenjang = document.getElementById("jenjang").value;
         var kode = document.getElementById("kode").value;
+        
 
         console.log("Nama: " + nama);
         console.log("Email: " + email);
@@ -47,23 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Popup Thank
-let popup1 = document.getElementById("popup1");
-
-function openPopup() {
-    popup1.classList.add("open-popup");
-}
-
-function closePopup() {
-    popup1.classList.remove("open-popup");
-}
 
 //mereset nilai input
 function resetFormInputs() {
     document.getElementById("nama").value = "";
     document.getElementById("email").value = "";
     document.getElementById("umur").value = "";
-    document.getElementById("jenjang").value = "SD"; 
+    document.getElementById("jenjang").value = ""; 
     document.getElementById("kode").value = "";
 }
 
