@@ -81,9 +81,9 @@
         </div>
     </section>
 
-    <form class="validate">
+    
         <div class="popup" id="popup-show">
-            <div class="form">
+            <form class="form">
                 <div id="close-btn" class="close-btn">&times;</div>
                 <h2>Silahkan Isi Data Diri Anda</h2>
                 <div class="form-element">
@@ -107,25 +107,31 @@
                     </select>
                 </div>
                 <div class="form-element">
-                    <label for="kelas">Nama kelas:</label>
-                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan Nama Kelas" required>
+                    <label for="kelas">Pilih Program:</label>
+                    <select type="jenjang" id="pilihProgram" name="pilihProgram">
+                        <option value="SD">Live Class</option>
+                        <option value="SMP">Private Class</option>
+                        <option value="SMA">Try Out</option>
+                        <option value="SD">Trial Class</option>
+                        <option value="SMP">QnA With EduSpace</option>
+                    </select>
                 </div>
                 <div class="form-element">
                     <label for="kode">Kode Promo:</label>
-                    <input type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Jika Ada)" required>
+                    <input type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Opsional)">
+                    <button type="submit" class="btn1" id="btn1" onclick="validate()">Submit</button>
                 </div>
                 <div class="form-element">
-                    <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
+                    
                     <div class="popup1" id="popup1">
                         <img src="./style-program/ceklis.png">
                         <h2>Thank You!</h2>
                         <p>Your details has been succesfully submitted. thanks!</p>
-                        <button type="button" onclick="closePopup()">OK</button>
+                        <button type="button" id="ok">OK</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-    </form>
 
     <footer class="footer">
        <div>
