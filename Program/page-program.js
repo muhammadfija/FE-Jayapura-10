@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function(){
 var popup = document.getElementById("popup-show");
 var tutup = document.getElementById("close-btn");
 var btns = document.querySelectorAll(".btn-content"); 
+var popup1 = document.getElementById("popup1");
+var submitBtn = document.getElementById("btn1");
+var ok = document.getElementById("ok")
 
 btns.forEach(btn => {
     btn.onclick = function(){
@@ -24,64 +27,48 @@ tutup.onclick = function(){
     popup.style.display = "none";
 };
 
-// // Kirim data
-// document.addEventListener("DOMContentLoaded", function () {
-//     var submitButton = document.querySelector(".btn2");
+// Kirim data
+document.addEventListener("DOMContentLoaded", function () {
+    var submitButton = document.querySelector(".btn1");
 
-//     submitButton.addEventListener("click", function (e) {
-//         e.preventDefault();
+    submitButton.addEventListener("click", function (e) {
+        e.preventDefault();
 
-//         var nama = document.getElementById("nama").value;
-//         var email = document.getElementById("email").value;
-//         var umur = document.getElementById("umur").value;
-//         var jenjang = document.getElementById("jenjang").value;
-//         var kode = document.getElementById("kode").value;
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var umur = document.getElementById("umur").value;
+        var jenjang = document.getElementById("jenjang").value;
+        var kode = document.getElementById("kode").value;
 
-//         console.log("Nama: " + nama);
-//         console.log("Email: " + email);
-//         console.log("Umur: " + umur);
-//         console.log("Jenjang Sekolah: " + jenjang);
-//         console.log("Kode Promo: " + kode);
+        console.log("Nama: " + nama);
+        console.log("Email: " + email);
+        console.log("Umur: " + umur);
+        console.log("Jenjang Sekolah: " + jenjang);
+        console.log("Kode Promo: " + kode);
 
 //         resetFormInputs();
 //     });
 // });
 
-// function validate (){
-//     var nama = document.getElementById("nama");
-//     var email = document.getElementById("email");
-//     var umur = document.getElementById("umur");
-//     var jenjang = document.getElementById("jenjang");
-//     var kode = document.getElementById("kode");
+// Popup Thank
+let popup1 = document.getElementById("popup1");
 
-//     if(nama.value =="" ||email.value =="" ||umur.value =="" ||jenjang.value =="" ||kode.value =="")
-//     {
-//         alert("no values");
-//     }
-//     else{
-//     }
-//     resetFormInputs();
-// }
+function openPopup() {
+    popup1.classList.add("open-popup");
+}
 
-// // Popup Thank
-// let popup1 = document.getElementById("popup1");
+function closePopup() {
+    popup1.classList.remove("open-popup");
+}
 
-// function openPopup() {
-//     popup1.classList.add("open-popup");
-// }
-
-// function closePopup() {
-//     popup1.classList.remove("open-popup");
-// }
-
-// //mereset nilai input
-// function resetFormInputs() {
-//     document.getElementById("nama").value = "";
-//     document.getElementById("email").value = "";
-//     document.getElementById("umur").value = "";
-//     document.getElementById("jenjang").value = "SD"; 
-//     document.getElementById("kode").value = "";
-// }
+//mereset nilai input
+function resetFormInputs() {
+    document.getElementById("nama").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("umur").value = "";
+    document.getElementById("jenjang").value = "SD"; 
+    document.getElementById("kode").value = "";
+}
 
 
 

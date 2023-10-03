@@ -41,7 +41,7 @@
                     <h3>Live Class</h3>
                     <p> Nikmati serunya belajar secara langsung menggunakan fitur Live Class bersama pengajar terbaik dari EduSpace dan teman-teman lainnya. Kamu bisa belajar dari mana saja dengan cara yang tidak membosankan dengan media pembelajaran yang interaktif. EduSpace juga menyediakan modul digital yang bisa kamu akses meskipun masa pembelajaran sudah berakhir.</p>
                 </div>
-                <button class="btn-content btn1">Daftar</button>
+                <button class="btn-content btn2" id="live-class">Daftar</button>
             </article>
             <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-privateclass.png" alt="gambar-liveclass"></a>
@@ -49,7 +49,7 @@
                     <h3>Private Class</h3>
                     <p>Jika kamu menyukai pembelajaran secara eksklusif, kamu dapat memilih program Private Class ini agar pengalaman belajarmu bisa lebih menyenangkan. Kamu dapat memilih guru dan jam belajar sesuai keinginan kamu. Jangan khawatir jika merasa tidak cocok dengan pembelajaran secara online, karena EduSpace juga menyediakan pembelajaran secara tatap muka untuk Private Class ini. </p>
                 </div>
-                <button class="btn-content btn-private">Daftar</button>
+                <button class="btn-content btn-private" id="private-class">Daftar</button>
             </article>
             <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-tryout.png" alt="gambar-liveclass"></a>
@@ -57,19 +57,19 @@
                     <h3>Try Out</h3>
                     <p>Bingung menghadapi SNBT 2023? EduSpace punya solusinya! Simulasi soal disusun dengan prinsip HOTS mengikuti standar SNBT terbaru dan tentunya dibuat semirip mungkin dengan soal-soal SNBT. Setiap soalnya dilengkapi dengan pembahasan berupa teks maupun video yang pasti bikin kamu paham. Simulasi dapat diakses dimana saja dan kapan saja sesuai kemauan kalian. Yuk, coba simulasi Try Out bersama EduSpace! </p>
                 </div>
-                <button class="btn-content">Daftar</button>
+                <button class="btn-content" id="try-out">Daftar</button>
             </article>
             <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-freeclass.png" alt="gambar-liveclass"></a>
                     <h3>Trial Class</h3>
                     <p>Coba Trial Class secara gratis selama satu minggu bersama EduSpace. Kamu bisa mendapatkan kesempatan ini dengan selalu mengikuti infonya pada website resmi EduSpace karena Trial Class ini hanya diselenggarakan beberapa waktu tertentu saja. Di Trial Class ini kamu juga berkesempatan untuk berdiskusi bersama pengajar terbaik di forum yang telah disediakan dengan waktu tertentu, lho. Jadi jangan ketinggalan info dari kami, ya!</p>
-                <button class="btn-content">Daftar</button>
+                <button class="btn-content" id="trial-class">Daftar</button>
             </article>
             <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-qna.png" alt="gambar-liveclass"></a>
                     <h3>QnA With EduSpace</h3>
                     <p>Pertanyaan pekerjaan rumah kamu banyak yang tidak kamu pahami? Kamu bisa bertanya langsung pada EduSpace. Kamu bisa bertanya sepuasnya selama 24 jam melalui forum diskusi dan akan dijawab oleh pengajar terpercaya dari EduSpace. Jawaban pertanyaan kamu dapat dijawab dengan cepat dan tentunya membuatmu lebih paham dengan soal-soal yang sebelumnya terasa sulit bagimu. Dapat kamu nikmati secara gratis hanya di EduSpace.</p>
-                <button class="btn-content">Daftar</button>
+                <button class="btn-content" id="qna">Daftar</button>
             </article>
         </div>
     </section>
@@ -81,52 +81,46 @@
         </div>
     </section>
 
-    <form>
-        <div class="popup" id="popup-show">
-            <div class="form">
-                <div id="close-btn" class="close-btn">&times;</div>
-                <h2>Silahkan Isi Data Diri Anda</h2>
-                <div class="form-element">
-                    <label for="nama">Nama:</label>
-                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
-                </div>
-                <div class="form-element">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Masukkan Alamat Email" required>
-                </div>
-                <div class="form-element">
-                    <label for="umur">Umur:</label>
-                    <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda" required>
-                </div>
-                <div class="form-element">
-                    <label for="jenjang">Jenjang Sekolah:</label>
-                    <select type="jenjang" id="jenjang" name="jenjang">
-                        <option value="SD">SD</option>
-                        <option value="SMP">SMP</option>
-                        <option value="SMA">SMA</option>
-                    </select>
-                </div>
-                <div class="form-element">
-                    <label for="kelas">Nama kelas:</label>
-                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan Nama Kelas" required>
-                </div>
-                <div class="form-element">
-                    <label for="kode">Kode Promo:</label>
-                    <input required type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Jika Ada)">
-                </div>
-                <div class="form-element">
-                    <button type="submit" class="btn2">Submit</button>
-                    <div class="popup1" id="popup1">
-                        <img src="./style-program/ceklis.png">
-                        <h2>Thank You!</h2>
-                        <p>Your details has been succesfully submitted. thanks!</p>
-                        <button type="button" onclick="closePopup()">OK</button>
-                    </div>
+    <div class="popup" id="popup-show">
+        <div class="form">
+            <div id="close-btn" class="close-btn">&times;</div>
+            <h2>Silahkan Isi Data Diri Anda</h2>
+            <div class="form-element">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="form-element">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan Alamat Email">
+            </div>
+            <div class="form-element">
+                <label for="umur">Umur:</label>
+                <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda">
+            </div>
+            <div class="form-element">
+                <label for="jenjang">Jenjang Sekolah:</label>
+                <select type="jenjang" id="jenjang" name="jenjang">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <label for="kode">Kode Promo:</label>
+                <input required type="text" id="kode" name="kode" placeholder="Masukkan Kode Promo (Jika Ada)">
+            </div>
+            <div class="form-element">
+                <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
+                <div class="popup1" id="popup1">
+                    <img src="./style-program/ceklis.png">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted. thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
                 </div>
             </div>
         </div>
-    </form>
-    
+    </div>
+
     <footer class="footer">
        <div>
         <h6>Copyright 2023|EduSpace - from Group-10</h6>

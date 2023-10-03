@@ -239,6 +239,23 @@
         width: 300px;
     }
 
+    .popup1{
+        width: 250px;
+    }
+
+    .popup1 img{
+        width: 60px;
+    }
+
+    .popup1 h2{
+        font-size: 25px;
+    }
+
+    .popup1 p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
     .footer{
         padding: 1rem;
         font-size: 15px;
