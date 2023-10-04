@@ -18,9 +18,9 @@ var btns = document.querySelectorAll(".btn-content");
 var ok = document.getElementById("ok")
 var popupThx = document.getElementById("popup1")
 
-ok.onclick = function(){
-    popupThx.style.display = "none";
-};
+// ok.onclick = function(){
+//     popupThx.style.display = "none";
+// };
 
 
 btns.forEach(btn => {
@@ -68,7 +68,7 @@ function dataForm(event){
         }
 
         else{
-            alert('Silahkan Isi Data Anda Terlebih dahulu.');
+            alert(message);
         }
     })
 

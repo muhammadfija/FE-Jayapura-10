@@ -15,10 +15,10 @@
         <img src="./style-program/logo.png" alt="logoEdu" class="logo">
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar-program">
-            <a href="/home/css/index.html" class="home">Home</a>
+            <a href="/static/home/css/index.html" class="home">Home</a>
             <a href="page-program.html" class="active">Program</a>
-            <a href="/Promo/promo.html" class="home">Promo</a>
-            <a href="/About/EduSpaceAbout.html" class="home">About Us</a>
+            <a href="/static/Promo/promo.html" class="home">Promo</a>
+            <a href="/static/About/EduSpaceAbout.html" class="home">About Us</a>
         </nav>
     </header>
 
@@ -96,11 +96,11 @@
                 </div>
                 <div class="form-element">
                     <label for="umur">Umur:</label>
-                    <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda" required>
+                    <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda" min="5" max="20" required>
                 </div>
                 <div class="form-element">
                     <label for="jenjang">Jenjang Sekolah:</label>
-                    <select type="jenjang" id="jenjang" name="jenjang">
+                    <select type="jenjang" id="jenjang" name="jenjang" required>
                         <option value="SD">SD</option>
                         <option value="SMP">SMP</option>
                         <option value="SMA">SMA</option>
@@ -108,7 +108,13 @@
                 </div>
                 <div class="form-element">
                     <label for="kelas">Nama kelas:</label>
-                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan Nama Kelas" required>
+                    <select type="jenjang" id="jenjang" name="pilihProgram" required>
+                        <option value="LiveClass">Live Class</option>
+                        <option value="PrivateClass">Private Class</option>
+                        <option value="TryOut">Try Out</option>
+                        <option value="TrialClass">Trial Class</option>
+                        <option value="Qna">QnA With EduSpace</option>
+                    </select>
                 </div>
                 <div class="form-element">
                     <label for="kode">Kode Promo:</label>
@@ -116,7 +122,6 @@
                     <button type="submit" class="btn1" id="btn1">Submit</button>
                 </div>
                 <div class="form-element">
-                    <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
                     <div class="popup1" id="popup1">
                         <img src="./style-program/ceklis.png">
                         <h2>Thank You!</h2>
