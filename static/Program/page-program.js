@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function(){
     let menu = document.querySelector ("#menu-icon");
     let navbar = document.querySelector (".navbar-program");
@@ -15,9 +17,6 @@ var tutup = document.getElementById("close-btn");
 var btns = document.querySelectorAll(".btn-content"); 
 var ok = document.getElementById("ok")
 var popupThx = document.getElementById("popup1")
-var btn1 = document.getElementById("btn1");
-
-
 
 ok.onclick = function(){
     popupThx.style.display = "none";
@@ -34,32 +33,52 @@ tutup.onclick = function(){
     popup.style.display = "none";
 };
 
+function dataForm(event){
+    event.preventDefault();
 
+    const form = event.target;
+    const nama = form.querySelector('[name="nama"]').value;
+    const email = form.querySelector('[name="email"]').value;
+    const umur = form.querySelector('[name="umur"]').value;
+    const jenjang = form.querySelector('[name="jenjang"]').value;
+    const pilihProgram = form.querySelector('[name="pilihProgram"]').value;
+    const kode = form.querySelector('[name="kode"]').value;
 
-function validate(){
-    var nama = document.getElementById("nama");
-    var email = document.getElementById("email");
-    var umur = document.getElementById("umur");
-    var jenjang = document.getElementById("jenjang");
-    var pilihProgram = document.getElementById("pilihProgram");
-    var popup1 = document.getElementById("popup1");
-   
-
-    if(nama.value == "" || email.value == "" || umur.value == "" || jenjang.value == "" || pilihProgram.value == "" ){
-        document.addEventListener('submit', (e) =>{
-            e.preventDefault();
-        });
+    const data ={
+        nama: nama,
+        email: email,
+        umur: umur,
+        jenjang: jenjang,
+        pilihProgram: pilihProgram,
+        kode: kode
     }
-    else{
-        popup1.style.display = "block";
-        // alert("Terima kasih telah mendaftar");
-    };
+
+    fetch('http://localhost:3000/daftar',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success){
+            popupThx.style.display = 'block';
+            form.reset();
+        }
+
+        else{
+            alert('Silahkan Isi Data Anda Terlebih dahulu.');
+        }
+    })
+
+    .catch(error => console.error('Error sending data:', error));
 
     
 };
 
+const submitBtn = document.getElementById("btn1");
 
-
-
+submitBtn.addEventListener("click",dataForm);
 
 

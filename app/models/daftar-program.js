@@ -9,6 +9,7 @@ const daftar = connection.define(
     umur: { type: sequelize.DataTypes.INTEGER },
     jenjang_sekolah: { type: sequelize.DataTypes.STRING },
     kode_promo: { type: sequelize.DataTypes.STRING },
+    pilih_program: { type: sequelize.DataTypes.STRING }
   },
   {
     freezeTableName: true,
