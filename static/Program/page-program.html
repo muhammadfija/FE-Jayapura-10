@@ -15,10 +15,10 @@
         <img src="./style-program/logo.png" alt="logoEdu" class="logo">
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar-program">
-            <a href="/static/home/css/index.html" class="home">Home</a>
+            <a href="/home/css/index.html" class="home">Home</a>
             <a href="page-program.html" class="active">Program</a>
-            <a href="/static/Promo/promo.html" class="home">Promo</a>
-            <a href="/static/About/EduSpaceAbout.html" class="home">About Us</a>
+            <a href="/Promo/promo.html" class="home">Promo</a>
+            <a href="/About/EduSpaceAbout.html" class="home">About Us</a>
         </nav>
     </header>
 
@@ -81,9 +81,9 @@
         </div>
     </section>
 
-    
+    <form class="validate">
         <div class="popup" id="popup-show">
-            <form class="form">
+            <div class="form">
                 <div id="close-btn" class="close-btn">&times;</div>
                 <h2>Silahkan Isi Data Diri Anda</h2>
                 <div class="form-element">
@@ -107,14 +107,8 @@
                     </select>
                 </div>
                 <div class="form-element">
-                    <label for="kelas">Pilih Program:</label>
-                    <select type="jenjang" id="pilihProgram" name="pilihProgram">
-                        <option value="SD">Live Class</option>
-                        <option value="SMP">Private Class</option>
-                        <option value="SMA">Try Out</option>
-                        <option value="SD">Trial Class</option>
-                        <option value="SMP">QnA With EduSpace</option>
-                    </select>
+                    <label for="kelas">Nama kelas:</label>
+                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan Nama Kelas" required>
                 </div>
                 <div class="form-element">
                     <label for="kode">Kode Promo:</label>
@@ -122,16 +116,17 @@
                     <button type="submit" class="btn1" id="btn1">Submit</button>
                 </div>
                 <div class="form-element">
-                    
+                    <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
                     <div class="popup1" id="popup1">
                         <img src="./style-program/ceklis.png">
                         <h2>Thank You!</h2>
                         <p>Your details has been succesfully submitted. thanks!</p>
-                        <button type="button" id="ok">OK</button>
+                        <button type="button" onclick="closePopup()">OK</button>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
+    </form>
 
     <footer class="footer">
        <div>
