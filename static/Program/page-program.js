@@ -81,4 +81,16 @@ const submitBtn = document.getElementById("btn1");
 
 submitBtn.addEventListener("click",dataForm);
 
+function getContentData(){
+    fetch('http://localhost:3000/programcontent')
+        .then(response => response.json())
+        .then(data =>{
+            const contentElement = document.querySelector (content.box-section)
+            contentElement.querySelector('h3').textContent = data.nama;
+            contentElement.querySelector('p').textContent = data.deskripsi;
+        })
+        .catch(error => console.error('Error fetching content data:', error));
+};
+
+document.addEventListener('DOMContentLoaded',getContentData);
 
