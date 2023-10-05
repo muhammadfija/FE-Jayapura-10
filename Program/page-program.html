@@ -15,10 +15,10 @@
         <img src="./style-program/logo.png" alt="logoEdu" class="logo">
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar-program">
-            <a href="/static/home/css/index.html" class="home">Home</a>
+            <a href="/home/css/index.html" class="home">Home</a>
             <a href="page-program.html" class="active">Program</a>
-            <a href="/static/Promo/promo.html" class="home">Promo</a>
-            <a href="/static/About/EduSpaceAbout.html" class="home">About Us</a>
+            <a href="/Promo/promo.html" class="home">Promo</a>
+            <a href="/About/EduSpaceAbout.html" class="home">About Us</a>
         </nav>
     </header>
 
@@ -35,40 +35,40 @@
     <section class="program-content" id="our-program">
         <h2>Our Program</h2>
         <div class="box">
-            <article class="box-section" id="box-section-1">
+            <article class="box-section">
                 <img width="200px" height="auto"  src="./style-program/gambar-liveclass.png" alt="gambar-liveclass"></a>
                 <div>
-                    <h3></h3>
-                    <p></p>
+                    <h3>Live Class</h3>
+                    <p> Nikmati serunya belajar secara langsung menggunakan fitur Live Class bersama pengajar terbaik dari EduSpace dan teman-teman lainnya. Kamu bisa belajar dari mana saja dengan cara yang tidak membosankan dengan media pembelajaran yang interaktif. EduSpace juga menyediakan modul digital yang bisa kamu akses meskipun masa pembelajaran sudah berakhir.</p>
                 </div>
                 <button class="btn-content btn2" id="live-class">Daftar</button>
             </article>
-            <article class="box-section" id="box-section-2">
+            <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-privateclass.png" alt="gambar-liveclass"></a>
                 <div>
-                    <h3></h3>
-                    <p></p>
+                    <h3>Private Class</h3>
+                    <p>Jika kamu menyukai pembelajaran secara eksklusif, kamu dapat memilih program Private Class ini agar pengalaman belajarmu bisa lebih menyenangkan. Kamu dapat memilih guru dan jam belajar sesuai keinginan kamu. Jangan khawatir jika merasa tidak cocok dengan pembelajaran secara online, karena EduSpace juga menyediakan pembelajaran secara tatap muka untuk Private Class ini. </p>
                 </div>
                 <button class="btn-content btn-private" id="private-class">Daftar</button>
             </article>
-            <article class="box-section" id="box-section-3">
+            <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-tryout.png" alt="gambar-liveclass"></a>
                <div>
-                    <h3></h3>
-                    <p></p>
+                    <h3>Try Out</h3>
+                    <p>Bingung menghadapi SNBT 2023? EduSpace punya solusinya! Simulasi soal disusun dengan prinsip HOTS mengikuti standar SNBT terbaru dan tentunya dibuat semirip mungkin dengan soal-soal SNBT. Setiap soalnya dilengkapi dengan pembahasan berupa teks maupun video yang pasti bikin kamu paham. Simulasi dapat diakses dimana saja dan kapan saja sesuai kemauan kalian. Yuk, coba simulasi Try Out bersama EduSpace! </p>
                 </div>
                 <button class="btn-content" id="try-out">Daftar</button>
             </article>
-            <article class="box-section" id="box-section-4">
+            <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-freeclass.png" alt="gambar-liveclass"></a>
-                    <h3></h3>
-                    <p></p>
-                <button class="btn-content btn3"  id="trial-class">Daftar</button>
+                    <h3>Trial Class</h3>
+                    <p>Coba Trial Class secara gratis selama satu minggu bersama EduSpace. Kamu bisa mendapatkan kesempatan ini dengan selalu mengikuti infonya pada website resmi EduSpace karena Trial Class ini hanya diselenggarakan beberapa waktu tertentu saja. Di Trial Class ini kamu juga berkesempatan untuk berdiskusi bersama pengajar terbaik di forum yang telah disediakan dengan waktu tertentu, lho. Jadi jangan ketinggalan info dari kami, ya!</p>
+                <button class="btn-content" id="trial-class">Daftar</button>
             </article>
-            <article class="box-section" id="box-section-5">
+            <article class="box-section">
                 <img width="200px" height="auto" src="./style-program/gambar-qna.png" alt="gambar-liveclass"></a>
-                    <h3></h3>
-                    <p></p>
+                    <h3>QnA With EduSpace</h3>
+                    <p>Pertanyaan pekerjaan rumah kamu banyak yang tidak kamu pahami? Kamu bisa bertanya langsung pada EduSpace. Kamu bisa bertanya sepuasnya selama 24 jam melalui forum diskusi dan akan dijawab oleh pengajar terpercaya dari EduSpace. Jawaban pertanyaan kamu dapat dijawab dengan cepat dan tentunya membuatmu lebih paham dengan soal-soal yang sebelumnya terasa sulit bagimu. Dapat kamu nikmati secara gratis hanya di EduSpace.</p>
                 <button class="btn-content" id="qna">Daftar</button>
             </article>
         </div>
@@ -83,7 +83,7 @@
 
     <form class="validate">
         <div class="popup" id="popup-show">
-            <div class="form">
+            <div class="form" id="myForm">
                 <div id="close-btn" class="close-btn">&times;</div>
                 <h2>Silahkan Isi Data Diri Anda</h2>
                 <div class="form-element">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="form-element">
                     <label for="umur">Umur:</label>
-                    <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda" min="5" max="20" required>
+                    <input type="number" id="umur" name="umur" placeholder="Masukkan Umur Anda" min="5" max="28" required>
                 </div>
                 <div class="form-element">
                     <label for="jenjang">Jenjang Sekolah:</label>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="form-element">
                     <label for="kelas">Nama kelas:</label>
-                    <select type="jenjang" id="jenjang" name="pilihProgram" required>
+                    <select type="jenjang" id="pilihProgram" name="pilihProgram" required>
                         <option value="LiveClass">Live Class</option>
                         <option value="PrivateClass">Private Class</option>
                         <option value="TryOut">Try Out</option>
