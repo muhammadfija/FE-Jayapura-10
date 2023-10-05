@@ -34,7 +34,6 @@ function getContentData(req,res){
     });
 }
 
-
 module.exports = {
     addData,
     getContentData

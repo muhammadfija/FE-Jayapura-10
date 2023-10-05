@@ -1,15 +1,15 @@
 const express = require("express");
 const path = require("path");
-// const fileUpload = require("express-fileupload");
-// const cors = require("cors");
+const fileUpload = require("express-fileupload");
+const cors = require("cors");
 const connection = require("./app/config/database");
 
 const mainRouter = require("./app/routers/ProgramRouter/ProgramRouter");
 
 const app = express();
 
-// app.use(cors());
-// app.use(fileUpload());
+app.use(cors());
+app.use(fileUpload());
 app.use(express.static("public"));
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: false })); 

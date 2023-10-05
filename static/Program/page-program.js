@@ -81,16 +81,29 @@ const submitBtn = document.getElementById("btn1");
 
 submitBtn.addEventListener("click",dataForm);
 
+
+
 function getContentData(){
     fetch('http://localhost:3000/programcontent')
         .then(response => response.json())
-        .then(data =>{
-            const contentElement = document.querySelector (content.box-section)
-            contentElement.querySelector('h3').textContent = data.nama;
-            contentElement.querySelector('p').textContent = data.deskripsi;
+        .then(dataArray => {
+            dataArray.forEach((data, index) => {
+                // Menggunakan template string untuk membuat ID unik berdasarkan indeks
+                const boxSectionId = `box-section-${index + 1}`;
+                const contentContainer = document.getElementById(boxSectionId);  
+                
+                if (contentContainer) {
+                    const h3Element = contentContainer.querySelector('h3');
+                    const pElement = contentContainer.querySelector('p');
+                    
+                    // Set teks di dalam elemen-elemen yang sesuai
+                    h3Element.textContent = data.nama;
+                    pElement.textContent = data.deskripsi;
+                }
+            });
         })
         .catch(error => console.error('Error fetching content data:', error));
-};
+}
 
-document.addEventListener('DOMContentLoaded',getContentData);
-
+// Panggil getContentData saat halaman dimuat
+document.addEventListener('DOMContentLoaded', getContentData);
