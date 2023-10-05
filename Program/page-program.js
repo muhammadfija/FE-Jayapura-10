@@ -70,6 +70,7 @@ function dataForm(e){
         return Promise.reject(response);
         
     })
+
     .then(function(data){
         alert(data.message);
         form.reset();
