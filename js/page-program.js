@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function(){
 var popup = document.getElementById("popup-show");
 var tutup = document.getElementById("close-btn");
 var btns = document.querySelectorAll(".btn-content"); 
-var ok = document.getElementById("ok")
+var okThx = document.getElementById("ok")
 var popupThx = document.getElementById("popup1")
 
-// ok.onclick = function(){
-//     popupThx.style.display = "none";
-// };
+okThx.onclick = function(){
+    popupThx.style.display = "none";
+};
 
 
 btns.forEach(btn => {
@@ -72,7 +72,7 @@ function dataForm(e){
     })
 
     .then(function(data){
-        alert(data.message);
+        popupThx.style.display = "block";
         form.reset();
     })
     .catch(function(error){

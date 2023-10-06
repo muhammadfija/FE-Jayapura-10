@@ -1,7 +1,87 @@
+@media screen and (max-width: 900px) {
+    #menu-icon{
+        display: initial;
+        color: #193444;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+    header .navbar-about{
+        position: absolute;
+        display: flex;
+        top: -400px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f8f8f8;
+        transition: .3s;
+    }
+
+    .navbar-about.active{
+        top: 70px;
+    }
+
+    .navbar-about a{
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .navbar-about  a:after{
+        left: 40%;
+        bottom: 10px;
+    }
+
+    .navbar-about a.active:after{
+        width: 20%;
+    }
+    
+    .navbar-about a:hover:after{
+        width: 20%;
+    }
+
+    .home-content h1 {
+        font-size: 36px; 
+        padding: 110px; 
+    }
+
+    .home-content p {
+        font-size: 16px; 
+        margin-left: 5%; 
+        margin-top: -10px; 
+    }
+
+    .container {
+        padding-top: 50%; 
+    }
+
+    h4 {
+        margin-left: 5%; 
+        margin-top: 10px; 
+        font-size: 24px; 
+    }
+
+    .container3 {
+        margin-left: 5%; 
+        margin-right: 10px; 
+    }
+
+    .container3 p {
+        font-size: 12px; 
+    }
+
+    .container3 img {
+        width: 250px; 
+        height:200px;
+    }
+    
+}
 @media screen and (max-width: 600px) {
 
     body{
-        background-image: url(mobile2.png);
+        background-image: url(/About/mobile2.png);
         background-position: center;
         background-size: cover;
     }
