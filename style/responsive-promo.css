@@ -115,7 +115,7 @@
   }
 
   .icon-text img {
-    width: 16px;
+    width: 30px;
     height: auto;
     margin-right: 5px;
   }
@@ -129,7 +129,7 @@
   }
 
   .tombol {
-    background-color: #4CAF50;
+    background-color: #193444;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -227,6 +227,8 @@
     height: auto;
   }
 }
+
+  
 
 
 @media screen and (max-width: 400px) {
