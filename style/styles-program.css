@@ -1,6 +1,4 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Forum&family=Lancelot&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Lancelot&family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -233,9 +231,6 @@ body{
 .btn3{
     margin-top: 58px;
 }
-
-
-
 
 .content-program2{
     margin-top: 100px;

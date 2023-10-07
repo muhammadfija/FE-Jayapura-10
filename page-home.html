@@ -11,18 +11,18 @@
     <!-------LINK SWIPER JS---------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style-home.css" />
+    <link rel="stylesheet" href="/style/style-home.css" />
    
   </head>
   <body>
     <header class="header-program">
-      <img src="./gambar/4.png" alt="logoEdu" class="logo">
+      <img src="style/images/4.png" alt="logoEdu" class="logo">
       <div class="bx bx-menu" id="menu-icon"></div>
       <nav class="navbar-program">
-          <a href="/home/css/page-home.html" class="active">Home</a>
-          <a href="/Program/page-program.html" class="home">Program</a>
-          <a href="/Promo/page-promo.html" class="home">Promo</a>
-          <a href="/About/page-about.html" class="home">About Us</a>
+          <a href="page-home.html" class="active">Home</a>
+          <a href="page-program.html" class="home">Program</a>
+          <a href="page-promo.html" class="home">Promo</a>
+          <a href="page-about.html" class="home">About Us</a>
       </nav>
   </header>
 
@@ -38,7 +38,7 @@
         </div>
         <div class="header_right">
           <div class="header_right-image">
-            <img src="./gambar/bg.png" />
+            <img src="style/images/bg.png" />
           </div>
         </div>
       </div>
@@ -49,42 +49,45 @@
       <div class="container programs_container">
         <article class="program">
           <div class="program_image">
-            <img src="./gambar/program2.jpg" />
+            <img src="style/images/program2.jpg" />
           </div>
           <div class="program_info">
             <h4>Live Class</h4>
             <p>Nikmati serunya belajar secara langsung menggunakan fitur Live Class bersama pengajar terbaik dari EduSpace dan teman-teman lainnya.</p>
-            <a href="/Program/page-program.html" class="btn btn-primary btn-live">Learn more</a>
+            <a href="page-program.html" class="btn btn-primary btn-live">Learn more</a>
           </div>
         </article>
 
         <article class="program">
           <div class="program_image">
-            <img src="./gambar/program3.jpg" />
+            <img src="style/images/program3.jpg" />
           </div>
           <div class="program_info">
             <h4>Private Class</h4>
             <p>Jika kamu menyukai pembelajaran secara eksklusif, kamu dapat memilih program Private Class ini agar pengalaman belajarmu bisa lebih menyenangkan.</p>
-            <a href="/Program/page-program.html" class="btn btn-primary btn-private">Learn more</a>
+            <a href="page-program.html" class="btn btn-primary btn-private">Learn more</a>
           </div>
         </article>
 
         <article class="program">
           <div class="program_image">
-            <img src="./gambar/program5.jpg" />
+            <img src="style/images/program5.jpg" />
           </div>
           <div class="program_info">
             <h4>Trial Class</h4>
             <p>Coba Trial Class secara gratis selama satu minggu bersama EduSpace. Kamu bisa mendapatkan kesempatan ini dengan mengikuti infonya pada website resmi EduSpace.</p>
-            <a href="/Program/page-program.html" class="btn btn-primary">Learn more</a>
+            <a href="page-program.html" class="btn btn-primary">Learn more</a>
           </div>
       </div>
       <div class="selengkapnya">
-        <a href="/Program/page-program.html" class="link_program">Other program</a>
+        <a href="page-program.html" class="link_program">Other program</a>
       </div>
     </section>
     <!--========================== END OF PROGRAM =====================-->
     <section class="promo">
+      <div class="icon">
+        <a href="page-promo.html" class=icon-promo><img src="style/images/icon-promo.png"></a>
+      </div>
       <h2>Dapatkan promo dari kami</h2>
       <div class="container slider_container">
         <div class="slider">
@@ -94,10 +97,10 @@
             <input type="radio" name="slide" id="img3" />
             <input type="radio" name="slide" id="img4" />
 
-            <img src="./gambar/pemuda.png" class="m1" alt="img1" />
-            <img src="./gambar/pahlawan.png" class="m2" alt="img2" />
-            <img src="./gambar/ayah.png" class="m3" alt="img3" />
-            <img src="./gambar/ibu.png" class="m4" alt="img4" />
+            <img src="style/images/pemuda.png" class="m1" alt="img1" />
+            <img src="style/images/pahlawan.png" class="m2" alt="img2" />
+            <img src="style/images/ayah.png" class="m3" alt="img3" />
+            <img src="style/images/ibu.png" class="m4" alt="img4" />
           </div>
           <div class="dots">
             <label for="img1"></label>
@@ -105,9 +108,7 @@
             <label for="img3"></label>
             <label for="img4"></label>
           </div>
-          <div class="icon">
-            <a href="/Promo/page-promo.html" class=icon-promo><img src="./gambar/icon-promo.png"></a>
-          </div>
+         
         </div>
       </div>
     </section>
@@ -117,9 +118,8 @@
       <h2>About EduSpace</h2>
       <div class="container about_container">
         <article class="abouts">
-          <h4>EduSpace is committed to education, inovation, and support to achieve a better future through smart learning, making it an inspiring resource that aids in the growth of knowledge.</h4>
-          <p></p>
-          <a href="/About/page-about.html" class="link">selengapnya</a>
+          <h4>EduSpace maintains a robust focus on education, knowledge development, innovation, and supporting individuals in achieving a better future through intelligent learning. As a resource and inspirational hub, EduSpace endeavors to connect and assist the ever-evolving knowledge.</h4>
+          <a href="page-about.html" class="link">selengapnya</a>
         </article>
       </div>
     </section>
@@ -200,7 +200,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
-    <script src="/js/page-home.js"></script>
-    <script src="/js/page-program.js"></script>
+    <script src="script/page-home.js"></script>
+    <script src="script/page-program.js"></script>
   </body>
 </html>

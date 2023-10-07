@@ -1,69 +1,25 @@
 @media screen and (max-width: 600px) {
-
-    body{
-        background-image: url(/About/mobile2.png);
-        background-position: center;
-        background-size: cover;
-    }
-
-    #menu-icon{
-        display: initial;
-        color: #193444;
-    }
-
-    .logo{
-        width: 130px;
-        height: auto;
-    }
-
-    header .navbar-about{
-        position: absolute;
-        display: flex;
-        top: -400px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background-color: #f8f8f8;
-        transition: .3s;
-    }
-
-    .navbar-about.active{
-        top: 70px;
-    }
-
-    .navbar-about a{
-        padding: 1.5rem;
-        display: block;
-    }
-
-    .navbar-about  a:after{
-        left: 40%;
-        bottom: 10px;
-    }
-
-    .navbar-about a.active:after{
-        width: 20%;
-    }
     
-    .navbar-about a:hover:after{
-        width: 20%;
-    }
-
     .home{
         margin-bottom: auto;
         max-width: 600px;
     }
     .home-content h1 {
         padding: 100px;
+        padding-bottom: 0;
+        padding-left: 40px;
         font-size: x-small;
     }
 
     .home-content p {
         max-width: 600px;
-        font-size: 16px; 
+        font-size: 13px; 
         margin-left: 5%; 
-        margin-top: 100%;
+        padding-right: 10px;
+    }
+
+    .container{
+        margin-top: 50px;
     }
 
     .history{
@@ -102,6 +58,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        height: 70vh;
+    }
     #menu-icon{
         display: initial;
         color: #193444;
@@ -147,17 +106,20 @@
 
     .home-content h1 {
         font-size: 36px; 
-        padding: 110px; 
+        padding-top: 30%;
+        margin-bottom: 20px;
+        margin-left: 5px;
     }
 
     .home-content p {
         font-size: 16px; 
-        margin-left: 5%; 
+        margin-left: 10%; 
         margin-top: -10px; 
+        padding-top: 5px;
     }
 
     .container {
-        padding-top: 50%; 
+        padding-top: 150px; 
     }
 
     h4 {
